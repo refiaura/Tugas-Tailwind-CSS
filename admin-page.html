@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Triforcey</title>
+    <link rel="stylesheet" href="src/output.css">
+</head>
+<body class="bg-gray-100 flex h-screen font-sans">
+
+    <!-- Sidebar -->
+    <aside class="w-64 bg-gradient-to-br from-pink-500 to-pink-600 text-white flex flex-col">
+        <div class="p-6 flex items-center justify-center border-b border-pink-400">
+            <img src="z.png" alt="Logo" class="w-12 h-12">
+            <span class="text-2xl font-semibold ml-3">Triforcey Admin</span>
+        </div>
+        <nav class="flex flex-col p-4 space-y-3">
+            <a href="#" class="flex items-center px-4 py-2 text-white hover:bg-pink-700 rounded-md transition duration-200">
+                <span>Dashboard</span>
+            </a>
+            <a href="#" class="flex items-center px-4 py-2 text-white hover:bg-pink-700 rounded-md transition duration-200">
+                <span>Users</span>
+            </a>
+            <a href="#" class="flex items-center px-4 py-2 text-white hover:bg-pink-700 rounded-md transition duration-200">
+                <span>Settings</span>
+            </a>
+            <a href="#" class="flex items-center px-4 py-2 text-white hover:bg-pink-700 rounded-md transition duration-200">
+                <span>Reports</span>
+            </a>
+            <a href="login.html" class="flex items-center px-4 py-2 text-white hover:bg-pink-700 rounded-md transition duration-200">
+                <span>Logout</span>
+            </a>
+        </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-1 p-8 space-y-8">
+        
+        <!-- Header -->
+        <header class="flex items-center justify-between">
+            <h1 class="text-4xl font-bold text-pink-600">Dashboard</h1>
+            <button class="px-4 py-2 font-semibold text-white bg-pink-500 rounded-full shadow-lg hover:bg-pink-600 transition duration-200">
+                New Report
+            </button>
+        </header>
+
+        <!-- Statistics Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Card 1 -->
+            <div class="p-6 bg-white rounded-lg shadow-lg transform transition hover:scale-105 duration-200">
+                <h2 class="text-lg font-semibold text-pink-600">Total Users</h2>
+                <p class="mt-2 text-3xl font-bold text-gray-700">1,234</p>
+            </div>
+            <!-- Card 2 -->
+            <div class="p-6 bg-white rounded-lg shadow-lg transform transition hover:scale-105 duration-200">
+                <h2 class="text-lg font-semibold text-pink-600">New Signups</h2>
+                <p class="mt-2 text-3xl font-bold text-gray-700">567</p>
+            </div>
+            <!-- Card 3 -->
+            <div class="p-6 bg-white rounded-lg shadow-lg transform transition hover:scale-105 duration-200">
+                <h2 class="text-lg font-semibold text-pink-600">Active Sessions</h2>
+                <p class="mt-2 text-3xl font-bold text-gray-700">78</p>
+            </div>
+        </div>
+
+        <!-- User Table -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+            <table class="min-w-full divide-y divide-gray-200">
+                <thead class="bg-gradient-to-r from-pink-500 to-pink-600 text-white">
+                    <tr>
+                        <th class="px-6 py-3 text-left text-xs font-medium uppercase tracking-wider">Name</th>
+                        <th class="px-6 py-3 text-left text-xs font-medium uppercase tracking-wider">Email</th>
+                        <th class="px-6 py-3 text-left text-xs font-medium uppercase tracking-wider">Role</th>
+                        <th class="px-6 py-3 text-right text-xs font-medium uppercase tracking-wider">Actions</th>
+                    </tr>
+                </thead>
+                <tbody class="bg-white divide-y divide-gray-100">
+                    <!-- Example Row -->
+                    <tr class="hover:bg-gray-50 transition duration-150">
+                        <td class="px-6 py-4 text-gray-700">Ale</td>
+                        <td class="px-6 py-4 text-gray-500">ale@gmail.com</td>
+                        <td class="px-6 py-4 text-gray-500">Admin</td>
+                        <td class="px-6 py-4 text-right">
+                            <button class="px-3 py-1 text-sm font-medium text-white bg-pink-500 rounded-md hover:bg-pink-600 transition duration-200">Edit</button>
+                            <button class="px-3 py-1 text-sm font-medium text-white bg-red-500 rounded-md hover:bg-red-600 transition duration-200">Delete</button>
+                        </td>
+                    </tr>
+
+                    <tr class="hover:bg-gray-50 transition duration-150">
+                        <td class="px-6 py-4 text-gray-700">Rep</td>
+                        <td class="px-6 py-4 text-gray-500">Refi@gmail.com</td>
+                        <td class="px-6 py-4 text-gray-500">Admin</td>
+                        <td class="px-6 py-4 text-right">
+                            <button class="px-3 py-1 text-sm font-medium text-white bg-pink-500 rounded-md hover:bg-pink-600 transition duration-200">Edit</button>
+                            <button class="px-3 py-1 text-sm font-medium text-white bg-red-500 rounded-md hover:bg-red-600 transition duration-200">Delete</button>
+                        </td>
+                    </tr>
+
+                    <tr class="hover:bg-gray-50 transition duration-150">
+                        <td class="px-6 py-4 text-gray-700">Pitri</td>
+                        <td class="px-6 py-4 text-gray-500">pitri@gmail.com</td>
+                        <td class="px-6 py-4 text-gray-500">Admin</td>
+                        <td class="px-6 py-4 text-right">
+                            <button class="px-3 py-1 text-sm font-medium text-white bg-pink-500 rounded-md hover:bg-pink-600 transition duration-200">Edit</button>
+                            <button class="px-3 py-1 text-sm font-medium text-white bg-red-500 rounded-md hover:bg-red-600 transition duration-200">Delete</button>
+                        </td>
+                    </tr>
+                    <!-- Additional rows can be added here -->
+                </tbody>
+            </table>
+        </div>
+    </main>
+</body>
+</html>
