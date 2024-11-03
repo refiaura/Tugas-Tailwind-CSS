@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Toko_escrot</title>
+
+    <!-- Output CSS -->
+    <link href="output.css" rel="stylesheet" crossorigin="anonymous">
+    
+    <!-- Font and AOS for animation -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;400;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Custom Style -->
+    <style>
+        /* General Styling */
+        body {
+            font-family: 'Roboto Mono', monospace;
+            color: #444;
+            margin: 0;
+            padding-top: 60px;
+        }
+
+        /* Navbar Styling */
+        #navbar-custom {
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 10px 0;
+        }
+        .navbar-brand {
+            font-weight: bold;
+            font-size: 1.25rem;
+            color: #222;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .navbar-nav {
+            margin-left: auto;
+        }
+        .nav-link {
+            color: #555 !important;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            color: #21201e;
+            background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/Tugas-Tailwind-CSS/asset/foto1.jfif') no-repeat center center;
+            background-size: cover;
+        }
+        .hero h1 {
+            font-weight: bold;
+            font-size: 3em;
+            color: #fff;
+            margin-bottom: 15px;
+        }
+        .hero h2 {
+            font-weight: 300;
+            font-size: 1.2em;
+            color: #ddd;
+        }
+
+        /* Contact Section */
+        .contact {
+            background-color: #f5efee;
+            padding: 50px 0;
+        }
+        .contact .card {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border: none;
+            transition: transform 0.3s;
+            text-align: center;
+        }
+        .contact .card:hover {
+            transform: scale(1.05);
+        }
+        .contact h5 {
+            margin: 20px 0;
+            font-weight: 600;
+        }
+        .btn-primary {
+            background-color: #007bff;
+            border: none;
+            padding: 8px 16px;
+        }
+
+        /* Footer */
+        footer {
+            padding: 20px 0;
+            background-color: #212529;
+            color: #fff;
+            text-align: center;
+        }
+        footer p {
+            margin: 0;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav id="navbar-custom" class="navbar navbar-expand-lg navbar-light fixed-top bg-light">
+        <div class="container position-relative">
+            <a class="navbar-brand" href="#">TRIFORCEY</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/Tugas-Tailwind-CSS/src/login.html">Sign In</a>
+                  </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>ICE CREAM MARKET</h1>
+            <h2>Selamat datang di halaman produk ice cream kami. Temukan rangkaian es krim lezat kami di bawah ini dan nikmati sensasinya!</h2>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container" data-aos="fade-up">
+            <h1 class="text-center mb-4">Contact</h1>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Instagram</h5>
+                            <a href="https://www.instagram.com/lrafii.e/" class="btn btn-primary">Kunjungi</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Twitter</h5>
+                            <a href="https://twitter.com/home" class="btn btn-primary">Kunjungi</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">WhatsApp</h5>
+                            <a href="https://web.whatsapp.com/" class="btn btn-primary">Kunjungi</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Toko_escrot</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+        const navbar = document.getElementById('navbar-custom');
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 50) {
+                navbar.classList.add('bg-light');
+            } else {
+                navbar.classList.remove('bg-light');
+            }
+        });
+    </script>
+
+</body>
+</html>
